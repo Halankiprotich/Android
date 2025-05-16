@@ -6,43 +6,68 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".register">
 
     <EditText
-        android:id="@+id/Lemail"
+        android:id="@+id/RFullname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:minHeight="60dp"
+        android:hint="Full Name" />
+
+    <EditText
+        android:id="@+id/REmail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
         android:minHeight="60dp"
         android:hint="Email" />
 
+    <EditText
+        android:id="@+id/RDOB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:minHeight="60dp"
+        android:hint="Date Of Birth" />
+
 
     <EditText
-        android:id="@+id/Lpassword"
+        android:id="@+id/RPhonenumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:ems="10"
+        android:minHeight="60dp"
+        android:hint="Phone number" />
+
+    <EditText
+        android:id="@+id/Rpassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
         android:minHeight="60dp"
         android:hint="Password" />
 
-    <Button
-        android:id="@+id/Loginbtn"
+
+    <TextView
+        android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:minHeight="60dp"
-        android:text="Login" />
+        android:text="TextView" />
 
     <Button
-        android:id="@+id/Registerbtn"
+        android:id="@+id/RRegisterbtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:minHeight="60dp"
         android:text="Register" />
 
-    <TextView
-        android:id="@+id/DisplayInfoLogin"
+    <Button
+        android:id="@+id/RLoginbtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text=" "
-        tools:ignore="SpeakableTextPresentCheck" />
+        android:minHeight="60dp"
+        android:text="Back to Login" />
 </LinearLayout>
