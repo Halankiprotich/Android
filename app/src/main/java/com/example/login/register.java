@@ -5,16 +5,16 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
+
 
 public class register extends AppCompatActivity {
     EditText RFullname, REmail,RDOB, RPhonenumber, Rpassword;
     Button RRegisterbtn,RLoginbtn;
+    TextView  displayreginfo;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,6 +28,7 @@ public class register extends AppCompatActivity {
         RDOB=findViewById(R.id.RDOB);
         RPhonenumber=findViewById(R.id.RPhonenumber);
         Rpassword=findViewById(R.id.Rpassword);
+        displayreginfo=findViewById(R.id.displayreginfo);
 
         RRegisterbtn= findViewById(R.id.RRegisterbtn);
         RLoginbtn=findViewById(R.id.RLoginbtn);
@@ -39,6 +40,21 @@ public class register extends AppCompatActivity {
                 startActivity(i);
             }
         });
+         RRegisterbtn.setOnClickListener(new View.OnClickListener() {
+             @Override
+             public void onClick(View v) {
+                 String strFullName= RFullname.getText().toString();
+                 String strEmail= REmail.getText().toString();
+                 String strDOB= RDOB.getText().toString();
+                 String strPhoneNumber= RPhonenumber.getText().toString();
+                 String strPassword= Rpassword.getText().toString();
+
+                 if (strFullName.isEmpty() && strEmail.isEmpty() && strDOB.isEmpty() && strPhoneNumber.isEmpty() && strPassword.isEmpty()){
+                     displayreginfo.setText("All fields required");
+
+                 }else {}
+             }
+         });
 
         }
 

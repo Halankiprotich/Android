@@ -51,12 +51,6 @@
         android:hint="Password" />
 
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="TextView" />
-
     <Button
         android:id="@+id/RRegisterbtn"
         android:layout_width="match_parent"
@@ -70,4 +64,11 @@
         android:layout_height="wrap_content"
         android:minHeight="60dp"
         android:text="Back to Login" />
+
+    <TextView
+        android:id="@+id/displayreginfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=" "
+        tools:ignore="SpeakableTextPresentCheck" />
 </LinearLayout>
